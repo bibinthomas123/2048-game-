@@ -17,9 +17,13 @@ export default class Grid { // creating cells
     });
     // console.log(this.cells) //to verify that all the elements are being hooked up properly
   }
-  get #Emptycell() {
+
+  //returns the cell which doesnt have any values within 
+  get #Emptycell() {  
     return this.cells.filter((cell) => cell.tile == NULL);
   }
+
+  //To select the Random Empty cell to place tiles 
   radomEmptyCell() {
       const randomindex =math.floor(math.random()*this.Emptycell.length)
       return this.#Emptycell[randomindex]
@@ -41,7 +45,9 @@ class Cell { //creating the values and initilizing the cells
 
 }
 
-function createCellElement(gridElement) {
+ //creating the cell of GRID_SIZE * GRID_SIZE number times and appending it into the cells and into the HTML 
+
+function createCellElement(gridElement) {   
   const cells = [];
   for (let i = 0; i < GRID_SIZE * GRID_SIZE; i++) {
     const cell = document.createElement("div");
