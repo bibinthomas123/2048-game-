@@ -1,0 +1,19 @@
+{
+  "name": "2048-clone",
+  "version": "1.0.0",
+  "description": "\u001b[B2048 game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibinthomas123/2048-game-.git"
+  },
+  "author": "bibin thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibinthomas123/2048-game-/issues"
+  },
+  "homepage": "https://github.com/bibinthomas123/2048-game-#readme"
+}
