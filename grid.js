@@ -2,9 +2,9 @@ const GRID_SIZE = 4;
 const CELL_GAP = 2;
 const CELL_SIZE = 20;
 
-export default class Grid {
-  #cells;
-  constructor(gridElement) {
+export default class Grid { // creating cells 
+  #cells; //private memeber 
+  constructor(gridElement) { 
     gridElement.style.setProperty("--grid-size", GRID_SIZE);
     gridElement.style.setProperty("--cell-size", `${CELL_SIZE}vmin`);
     gridElement.style.setProperty("--cell-gap", `${CELL_GAP}vmin`);
@@ -25,7 +25,7 @@ export default class Grid {
       return this.#Emptycell[randomindex]
   }
 }
-class Cell {
+class Cell { //creating the values and initilizing the cells
   #cellElement;
   #x;
   #y;
